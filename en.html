@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matías Cufre | Data, Automation & Systems</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-blue-100 selection:text-blue-900">
+
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex justify-between items-center">
+            <a href="#inicio" class="font-bold text-xl tracking-tight text-slate-900">
+                Matías<span class="text-blue-600">.</span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#sobre-mi" class="hover:text-blue-600 transition">About Me</a>
+                <a href="#experiencia" class="hover:text-blue-600 transition">Experience</a>
+                <a href="#habilidades" class="hover:text-blue-600 transition">Skills</a>
+                <a href="#formacion" class="hover:text-blue-600 transition">Education</a>
+            </div>
+
+            <div class="flex items-center gap-4 text-slate-400">
+                <a href="index.html" class="hover:text-blue-600 transition font-bold" title="Cambiar a Español">ES</a>
+                
+                <button id="btn-dark-mode" class="hover:text-blue-600 transition" title="Dark Mode"><i class="fa-regular fa-moon text-lg"></i></button>
+                <a href="mailto:matiascufret@gmail.com" class="hidden md:inline-block ml-4 bg-slate-900 text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-blue-600 transition">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="pt-32 pb-24 px-6 border-b border-slate-50">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="flex-1 space-y-6">
+                <p class="text-blue-600 font-medium tracking-wide text-sm uppercase">Professional Portfolio</p>
+                <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
+                    Data, <span class="text-blue-600">automation</span> and process improvement.
+                </h1>
+                <p class="text-lg text-slate-600 leading-relaxed max-w-xl">
+                    I'm <strong>Matías Cufre</strong>, a senior Information Systems Engineering student. I work with data, automation, and systems to simplify tasks, improve processes, and generate actionable insights.
+                </p>
+                <div class="pt-4">
+                    <a href="#sobre-mi" class="text-blue-600 font-semibold hover:text-blue-700 flex items-center gap-2 group">
+                        Learn more about my profile 
+                        <i class="fa-solid fa-arrow-down transform group-hover:translate-y-1 transition"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="w-56 h-56 md:w-72 md:h-72 shrink-0 relative">
+                <div class="absolute inset-0 bg-slate-100 rounded-full -z-10 transform translate-x-4 translate-y-4"></div>
+                <div class="w-full h-full bg-white rounded-full p-2 border-4 border-slate-50 shadow-lg">
+                    <img src="assets/perfil.jpg" alt="Matías Cufre" class="w-full h-full object-cover rounded-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="py-24 bg-slate-50 px-6 border-b border-slate-100">
+        <div class="max-w-3xl mx-auto space-y-6">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8">General Information</h2>
+            <p class="text-slate-600 leading-relaxed text-lg">
+                My name is Matías Cufre, and I am a senior Information Systems Engineering student at UTN. My professional profile focuses on understanding how organizations operate internally and finding opportunities to help them work better through technology.
+            </p>
+            <p class="text-slate-600 leading-relaxed text-lg">
+                I am interested in understanding how systems and processes work from the inside in order to improve them. In my day-to-day work, I handle databases, Python automation, functional analysis, and documentation, always looking for practical solutions that add real value to the team.
+            </p>
+            <p class="text-slate-600 leading-relaxed text-lg">
+                I strongly value clear communication, best practices, and continuous learning. I enjoy collaborating with different departments, understanding users' needs, and proposing improvements that make daily work simpler and more efficient.
+            </p>
+        </div>
+    </section>
+
+    <section id="experiencia" class="py-24 px-6 border-b border-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-slate-900 mb-6">Experience</h2>
+            <p class="text-slate-600 text-lg mb-16 max-w-2xl leading-relaxed">
+                I currently work at the Court of Accounts of Córdoba, where I combine data analysis, automation, and IT support to improve processes and solve real-world problems.
+            </p>
+            
+            <div class="mb-20">
+                <div class="mb-10 border-l-2 border-blue-600 pl-6 py-1">
+                    <h3 class="text-2xl font-bold text-slate-900">Tribunal de Cuentas de la Provincia de Córdoba</h3>
+                    <p class="text-blue-600 font-medium mt-1">Data & Systems Support Analyst — TRIDI Project</p>
+                    <p class="text-sm text-slate-400 font-medium mt-2"><i class="fa-regular fa-calendar mr-2"></i>February 2025 – Present</p>
+                </div>
+                
+                <p class="text-slate-600 leading-relaxed mb-12 max-w-3xl text-lg">
+                    I am part of the TRIDI project, an administrative and financial management system. My work focuses on analyzing data, automating tasks, and collaborating on improving the system's processes and functionalities.
+                </p>
+
+                <div class="space-y-12">
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100">
+                        <h4 class="text-xl font-bold text-slate-800 mb-3 flex items-center gap-3">
+                            <div class="w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center"><i class="fa-solid fa-bolt"></i></div>
+                            Process Automation
+                        </h4>
+                        <p class="text-slate-600 leading-relaxed max-w-3xl mb-4">
+                            I develop Python scripts to automate repetitive tasks, consume external APIs, validate data, and generate reports. This helps reduce manual work time and improves process reliability.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100">
+                        <h4 class="text-xl font-bold text-slate-800 mb-3 flex items-center gap-3">
+                            <div class="w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center"><i class="fa-solid fa-clipboard-check"></i></div>
+                            Data Analysis and Validation
+                        </h4>
+                        <p class="text-slate-600 leading-relaxed max-w-3xl mb-4">
+                            I work with databases and SQL queries to analyze information, detect inconsistencies, and validate business rules. I also use Power BI and Excel to organize and visualize data in a useful way for the team.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100">
+                        <h4 class="text-xl font-bold text-slate-800 mb-3 flex items-center gap-3">
+                            <div class="w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center"><i class="fa-solid fa-users"></i></div>
+                            Continuous Improvement and Documentation
+                        </h4>
+                        <p class="text-slate-600 leading-relaxed max-w-3xl mb-4">
+                            I participate in functional analysis tasks, documentation, and requirements gathering. I write user stories, acceptance criteria, and create Figma prototypes to ensure system improvements are clear before development begins.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="habilidades" class="py-24 bg-slate-50 px-6 border-b border-slate-100">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12">Tools and Competencies</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                        <h4 class="font-bold text-slate-900 mb-4 border-b border-slate-50 pb-2">Technology and Data</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            <strong>Tools:</strong> Python, SQL, Power BI, Excel.<br>
+                            <strong>Application:</strong> Process automation, API integration, data validation, report generation, and data analysis support.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                        <h4 class="font-bold text-slate-900 mb-4 border-b border-slate-50 pb-2">Project Management</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Agile Methodologies (Scrum), User Stories, Azure DevOps (TFS), Figma Prototyping, and Functional Documentation.
+                        </p>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm h-full">
+                        <h4 class="font-bold text-slate-900 mb-4 border-b border-slate-50 pb-2">Soft Skills</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Experience in user communication, teamwork, and problem-solving, developed in both customer service and technical environments.
+                            <br><br>
+                            • Clear communication and professional demeanor.<br>
+                            • Problem-solving and analytical thinking.<br>
+                            • Teamwork and organization.<br>
+                            • Time management and goal achievement.<br>
+                            • Adaptability to new tasks and tools.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formacion" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-slate-900 mb-10">Academic Background</h2>
+            
+            <ul class="space-y-6 max-w-3xl">
+                <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                    <div class="w-2 h-2 bg-blue-600 rounded-full hidden md:block"></div>
+                    <strong class="text-slate-900">Information Systems Engineering</strong> 
+                    <span class="text-slate-500">— Universidad Tecnológica Nacional FRC.</span>
+                </li>
+                <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                    <div class="w-2 h-2 bg-slate-300 rounded-full hidden md:block"></div>
+                    <strong class="text-slate-900">SQL Course</strong> 
+                    <span class="text-slate-500">— Coderhouse.</span>
+                </li>
+                <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                    <div class="w-2 h-2 bg-slate-300 rounded-full hidden md:block"></div>
+                    <strong class="text-slate-900">Power BI Course</strong> 
+                    <span class="text-slate-500">— Coderhouse.</span>
+                </li>
+                <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                    <div class="w-2 h-2 bg-slate-300 rounded-full hidden md:block"></div>
+                    <strong class="text-slate-900">AI and Workflow Automation</strong> 
+                    <span class="text-slate-500">— Universidad Nacional de Córdoba (UNC).</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="py-10 bg-slate-50 border-t border-slate-100 text-center px-6">
+        <p class="text-slate-500 text-sm">© 2026 Matías Cufre.</p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
