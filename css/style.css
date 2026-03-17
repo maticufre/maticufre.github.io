@@ -1,0 +1,11 @@
+/* css/style.css */
+
+/* Aplicamos la fuente Inter a todo el proyecto */
+body { 
+    font-family: 'Inter', sans-serif; 
+}
+
+/* Transición suave para cuando implementemos el Modo Oscuro */
+html {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}

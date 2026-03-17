@@ -12,9 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-white text-slate-800 antialiased selection:bg-blue-100 selection:text-blue-900">
 
@@ -32,8 +30,8 @@
             </div>
 
             <div class="flex items-center gap-4 text-slate-400">
-                <button class="hover:text-blue-600 transition" title="Cambiar a Inglés (Próximamente)"><i class="fa-solid fa-language text-lg"></i></button>
-                <button class="hover:text-blue-600 transition" title="Modo Oscuro (Próximamente)"><i class="fa-regular fa-moon text-lg"></i></button>
+                <button id="btn-language" class="hover:text-blue-600 transition" title="Cambiar a Inglés"><i class="fa-solid fa-language text-lg"></i></button>
+                <button id="btn-dark-mode" class="hover:text-blue-600 transition" title="Modo Oscuro"><i class="fa-regular fa-moon text-lg"></i></button>
                 <a href="mailto:maticufret@gmail.com" class="hidden md:inline-block ml-4 bg-slate-900 text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-blue-600 transition">
                     Contactar
                 </a>
@@ -61,7 +59,7 @@
             
             <div class="w-64 h-64 md:w-80 md:h-80 shrink-0 relative">
                 <div class="absolute inset-0 bg-slate-100 rounded-full -z-10 transform translate-x-4 translate-y-4"></div>
-                <img src="perfil.jpg" alt="Matías Cufre" class="w-full h-full object-cover rounded-full border-4 border-white shadow-lg bg-slate-50">
+                <img src="assets/perfil.jpg" alt="Matías Cufre" class="w-full h-full object-cover rounded-full border-4 border-white shadow-lg bg-slate-50">
             </div>
         </div>
     </section>
@@ -191,7 +189,7 @@
                 <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                     <div class="w-2 h-2 bg-slate-300 rounded-full hidden md:block"></div>
                     <strong class="text-slate-900">Curso de SQL</strong> 
-                    <span class="text-slate-500">— Coderhouse.</span>
+                    <span class="text-slate-500">— Coderhouse (Finalizado).</span>
                 </li>
                 <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                     <div class="w-2 h-2 bg-slate-300 rounded-full hidden md:block"></div>
@@ -211,5 +209,6 @@
         <p class="text-slate-500 text-sm">© 2026 Matías Cufre. Construido con diseño minimalista y buenas prácticas.</p>
     </footer>
 
+    <script src="js/main.js" defer></script>
 </body>
 </html>
