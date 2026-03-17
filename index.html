@@ -1,98 +1,145 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matías Cufré | Analista de Sistemas & Datos</title>
+    <title>Matías Cufré | Analista de Datos & Automatización</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="bg-gray-50 font-sans text-gray-900">
+<body class="bg-slate-50 font-sans text-slate-900">
 
-    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="font-bold text-xl tracking-tight text-indigo-600">MC.</span>
-            <div class="space-x-6 text-sm font-medium">
-                <a href="#experiencia" class="hover:text-indigo-600 transition">Experiencia</a>
-                <a href="#habilidades" class="hover:text-indigo-600 transition">Habilidades</a>
-                <a href="mailto:maticufret@gmail.com" class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition">Contacto</a>
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
+            <span class="font-bold text-xl tracking-tighter text-blue-600">MC.</span>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest">
+                <a href="#inicio" class="hover:text-blue-600 transition">Inicio</a>
+                <a href="#experiencia" class="hover:text-blue-600 transition">Experiencia</a>
+                <a href="#habilidades" class="hover:text-blue-600 transition">Habilidades</a>
+                <a href="#formacion" class="hover:text-blue-600 transition">Formación</a>
             </div>
+            <a href="mailto:maticufret@gmail.com" class="bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-blue-700 transition">
+                Contacto
+            </a>
         </div>
     </nav>
 
-    <header class="max-w-5xl mx-auto px-6 py-20">
-        <div class="flex flex-col md:flex-row items-center gap-12">
+    <section id="inicio" class="pt-32 pb-20 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
             <div class="flex-1 space-y-6">
-                <h1 class="text-5xl md:text-7xl font-black text-gray-900 leading-tight">
-                    Analista de <span class="text-indigo-600 text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500">Datos y Procesos.</span>
+                <h1 class="text-5xl md:text-7xl font-black leading-tight">
+                    Matías Cufré
                 </h1>
-                <p class="text-xl text-gray-600 max-w-2xl leading-relaxed">
-                    Estudiante avanzado de <strong>Ingeniería en Sistemas (UTN)</strong>. 
-                    Actualmente optimizando procesos en el Tribunal de Cuentas mediante Python, SQL y automatización.
+                <p class="text-2xl text-blue-600 font-medium italic">
+                    Analista de Datos y Automatización de Procesos
                 </p>
+                <p class="text-lg text-slate-600 max-w-xl leading-relaxed">
+                    Estudiante de <strong>Ingeniería en Sistemas (UTN)</strong> especializado en transformar datos en decisiones y procesos manuales en flujos automáticos mediante Python y SQL.
+                </p>
+                <div class="pt-4 flex gap-4">
+                    <a href="#experiencia" class="border-2 border-slate-900 px-6 py-3 rounded-xl font-bold hover:bg-slate-900 hover:text-white transition">Ver Experiencia</a>
+                </div>
             </div>
+            <div class="w-64 h-64 md:w-80 md:h-80 relative">
+                <div class="absolute inset-0 bg-blue-600 rounded-3xl rotate-6 -z-10 opacity-20"></div>
+                <img src="perfil.jpg" alt="Matías Cufré" class="w-full h-full object-cover rounded-3xl shadow-2xl border-4 border-white">
+                </div>
         </div>
-    </header>
+    </section>
 
-    <main class="max-w-5xl mx-auto px-6 space-y-24 pb-20">
+    <section id="experiencia" class="py-24 bg-white border-y border-slate-200 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-black mb-12 flex items-center gap-4">
+                <span class="bg-blue-600 text-white w-10 h-10 flex items-center justify-center rounded-lg text-sm">01</span>
+                Experiencia en el Tribunal de Cuentas
+            </h2>
+            
+            <div class="space-y-12">
+                <div class="border-l-4 border-blue-600 pl-6 py-2">
+                    <h3 class="text-2xl font-bold italic">Proyecto TRIDI (UTN / Tribunal)</h3>
+                    <p class="text-slate-500 font-semibold mb-4 text-sm">FEBRERO 2025 — ACTUALIDAD</p>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        Desarrollo y mantenimiento de sistemas administrativos y financieros. Mi enfoque principal es la **eficiencia operativa** mediante la automatización.
+                    </p>
+                </div>
 
-        <section id="habilidades" class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                <div class="text-indigo-600 text-3xl mb-4"><i class="fa-solid fa-code"></i></div>
-                <h3 class="font-bold text-lg mb-2">Automatización</h3>
-                <p class="text-gray-500 text-sm">Desarrollo de scripts en Python, consumo de APIs y procesamiento batch.</p>
-            </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                <div class="text-indigo-600 text-3xl mb-4"><i class="fa-solid fa-database"></i></div>
-                <h3 class="font-bold text-lg mb-2">Análisis de Datos</h3>
-                <p class="text-gray-500 text-sm">Consultas SQL avanzadas, validación de integridad y dashboards en Power BI.</p>
-            </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                <div class="text-indigo-600 text-3xl mb-4"><i class="fa-solid fa-diagram-project"></i></div>
-                <h3 class="font-bold text-lg mb-2">Análisis Funcional</h3>
-                <p class="text-gray-500 text-sm">Modelado BPMN, redacción de Historias de Usuario y metodologías Scrum.</p>
-            </div>
-        </section>
-
-        <section id="experiencia" class="space-y-8">
-            <h2 class="text-3xl font-bold tracking-tight">Experiencia Profesional</h2>
-            <div class="relative pl-8 border-l-2 border-indigo-100 space-y-12">
-                <div class="relative">
-                    <div class="absolute -left-[41px] bg-indigo-600 h-4 w-4 rounded-full border-4 border-white"></div>
-                    <div class="space-y-4">
-                        <div class="flex flex-wrap justify-between items-center gap-2">
-                            <h3 class="text-2xl font-bold">Tribunal de Cuentas - Proyecto TRIDI</h3>
-                            <span class="text-sm font-bold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full uppercase">Feb 2025 - Actualidad</span>
-                        </div>
-                        <p class="font-semibold text-gray-700 uppercase tracking-wider text-sm">Analista de Datos y Soporte</p>
-                        <p class="text-gray-600 leading-relaxed">
-                            Diseño de procesos <strong>ETL</strong> y scripts de automatización en Python que optimizaron la validación masiva de registros financieros. Responsable del análisis funcional y documentación técnica bajo metodologías ágiles.
-                        </p>
-                        <div class="flex flex-wrap gap-2 text-xs font-mono">
-                            <span class="bg-gray-100 px-2 py-1 rounded">Python (Requests/Pandas)</span>
-                            <span class="bg-gray-100 px-2 py-1 rounded">SQL Server</span>
-                            <span class="bg-gray-100 px-2 py-1 rounded">TFS / Scrum</span>
-                        </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-slate-50 p-6 rounded-2xl">
+                        <h4 class="font-bold mb-3 text-blue-700"><i class="fa-brands fa-python mr-2"></i>Automatización Python</h4>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li>• Scripts para consumo de APIs (SOAP/REST).</li>
+                            <li>• Procesamiento masivo de datos (Multithreading).</li>
+                            <li>• Sistemas de validación automática de registros.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl">
+                        <h4 class="font-bold mb-3 text-blue-700"><i class="fa-solid fa-database mr-2"></i>Gestión de Datos</h4>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li>• Análisis de incidencias en bases SQL.</li>
+                            <li>• Procesos ETL y migración de datos financieros.</li>
+                            <li>• Creación de Dashboards en Power BI.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="bg-indigo-600 rounded-3xl p-10 text-white flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="space-y-2">
-                <h2 class="text-3xl font-bold">Formación Académica</h2>
-                <p class="opacity-90">Ingeniería en Sistemas de Información - UTN Córdoba</p>
+    <section id="habilidades" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-black mb-16">Stack Tecnológico</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="p-4">
+                    <i class="fa-solid fa-terminal text-4xl text-blue-600 mb-4"></i>
+                    <p class="font-bold">Python</p>
+                    <p class="text-xs text-slate-400 font-mono">Automation / APIs</p>
+                </div>
+                <div class="p-4">
+                    <i class="fa-solid fa-server text-4xl text-blue-600 mb-4"></i>
+                    <p class="font-bold">SQL</p>
+                    <p class="text-xs text-slate-400 font-mono">Consultas / Integridad</p>
+                </div>
+                <div class="p-4">
+                    <i class="fa-solid fa-chart-line text-4xl text-blue-600 mb-4"></i>
+                    <p class="font-bold">Power BI</p>
+                    <p class="text-xs text-slate-400 font-mono">Visualización</p>
+                </div>
+                <div class="p-4">
+                    <i class="fa-solid fa-gears text-4xl text-blue-600 mb-4"></i>
+                    <p class="font-bold">ETL</p>
+                    <p class="text-xs text-slate-400 font-mono">Data Engineering</p>
+                </div>
             </div>
-            <div class="text-center md:text-right">
-                <span class="text-5xl font-black">2026</span>
-                <p class="text-sm uppercase tracking-widest opacity-80 italic">Año previsto de Graduación</p>
+        </div>
+    </section>
+
+    <section id="formacion" class="py-24 bg-slate-900 text-white px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-black mb-12">Formación Académica</h2>
+            <div class="space-y-8">
+                <div class="flex flex-col md:flex-row justify-between border-b border-slate-700 pb-8 gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold">Ingeniería en Sistemas de Información</h3>
+                        <p class="text-blue-400">Universidad Tecnológica Nacional (UTN) — Córdoba</p>
+                    </div>
+                    <span class="text-slate-400">Estudiante Avanzado</span>
+                </div>
+                <div class="flex flex-col md:flex-row justify-between gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold">Cursos Complementarios</h3>
+                        <p class="text-slate-400 text-sm">SQL & Power BI (Coderhouse) | IA & Automatización</p>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </main>
-
-    <footer class="border-t border-gray-200 py-12 text-center text-gray-400 text-sm">
-        <p>Construido por Matías Cufré con IA & Tailwind CSS</p>
+    <footer class="py-12 bg-white text-center border-t border-slate-200">
+        <p class="text-slate-400 text-sm mb-4 italic italic">"La tecnología genera mejoras cuando entiende el contexto organizacional"</p>
+        <div class="flex justify-center gap-6 text-slate-600">
+            <a href="https://github.com/maticufre" class="hover:text-blue-600"><i class="fa-brands fa-github text-xl"></i></a>
+            <a href="mailto:maticufret@gmail.com" class="hover:text-blue-600"><i class="fa-solid fa-envelope text-xl"></i></a>
+        </div>
     </footer>
 
 </body>
