@@ -1,11 +1,12 @@
-/* css/style.css */
-
-/* Aplicamos la fuente Inter a todo el proyecto */
-body { 
-    font-family: 'Inter', sans-serif; 
+.dark-theme {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: #0f172a;
 }
 
-/* Transición suave para cuando implementemos el Modo Oscuro */
+.dark-theme img {
+    filter: invert(1) hue-rotate(180deg);
+}
+
 html {
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: filter 0.3s ease, background-color 0.3s ease;
 }
